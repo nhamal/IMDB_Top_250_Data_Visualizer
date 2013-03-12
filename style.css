@@ -1,0 +1,163 @@
+/* stylesheet for index.html */
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    /* generated from http://www.colorzilla.com/gradient-editor/ */
+    background: #46c900; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #46c900 0%, #73c138 49%, #4caa00 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#46c900), color-stop(49%,#73c138), color-stop(100%,#4caa00)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #46c900 0%,#73c138 49%,#4caa00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #46c900 0%,#73c138 49%,#4caa00 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #46c900 0%,#73c138 49%,#4caa00 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #46c900 0%,#73c138 49%,#4caa00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46c900', endColorstr='#4caa00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+h1  {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: black 1px 1px 1px;
+    margin: 5px 0px 5px 5px;
+}
+
+#title{
+    margin-left: 340px;
+    margin-right:10px;
+}
+
+#explanation{
+    padding: 10px;
+}
+
+
+#none-selected{
+    border-style:solid;
+    border-color: red;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 5px;
+    background-color: #FFBABA;
+    font-size: 22px;
+    margin: 150px 40px 0px 40px;
+    text-align: center;
+}
+
+#movie-selector{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin:10px;
+    padding: 10px;
+    background-color: #007600;
+    width: 300px;
+    border-radius: 10px;
+    height:640px;
+}
+
+.offwhite-box{
+    background-color: #f5f3e5;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px #000;
+}
+
+
+#left-info{
+    float:left;
+    width:450px;
+}
+#right-info{
+    float:left;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#centered-container{
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    width: 970px;
+    background-color: #00A600;
+}
+
+#list-holder{
+    padding:10px 10px;
+    margin-top: 10px;
+}
+
+#selected-movies{
+    overflow: auto;
+}
+
+#selected-movies li{
+    padding: 3px 0px;
+}
+
+#filters{
+    padding:10px;
+}
+
+.filter{
+    width:86px;
+}
+
+.search-filter{
+    width:276px;
+}
+
+#data-holder{
+    position: absolute;
+    left: 330px;
+    right: 0px;
+    top: 114px;
+    height: 535px;
+    margin:10px;
+}
+
+.info-box{
+    padding: 0px;
+    height:100%;
+}
+
+
+.sub-info-box{
+    border-style:solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 5px;
+    background-color: white;
+    font-size: 22px;
+    margin: 20px 0px 0px 10px;
+    text-align: center;
+}
+
+.sub-info-box li:first-child{
+    margin-top: 10px;
+}
+
+.box-left{
+    float:left;
+    width:200px;
+    height:230px;
+}
+
+.box-right{
+    width: 130px;
+    height:230px;
+    margin-right: 10px;
+}
+
+.info-div:first-child{
+    margin-top: 10px;
+}
+
+.info-div{
+    text-align: left;
+    font-size: 16px;
+}
