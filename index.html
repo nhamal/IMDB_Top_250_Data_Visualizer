@@ -11,53 +11,54 @@
 
   <body>
     <div id="centered-container">
-      <div id="movie-selector">
-        <div id="filters" class = "offwhite-box">
-          Rating:
-          <select id="rating-filter" class="filter">
-            <option></option>
-            <option>G</option>
-            <option>PG</option>
-            <option>PG_13</option>
-            <option>R</option>
-            <option>UNRATED</option>
-          </select>
-          Genre:
-          <select id="genre-filter" class="filter">
-            <option> </option>
-          </select>
-          <input id="actor-filter" class="filter search-filter" placeholder="Actor Name">
-          </input>
-          <input id="director-filter" class="filter search-filter" placeholder="Director Name">
-          </input>
+      <div id="absolute-container">
+        <div id="movie-selector">
+          <div id="filters" class = "offwhite-box">
+            Rating:
+            <select id="rating-filter" class="filter">
+              <option></option>
+              <option>G</option>
+              <option>PG</option>
+              <option>PG_13</option>
+              <option>R</option>
+              <option>UNRATED</option>
+            </select>
+            Genre:
+            <select id="genre-filter" class="filter">
+              <option> </option>
+            </select>
+            <input id="actor-filter" class="filter search-filter" placeholder="Actor Name">
+            </input>
+            <input id="director-filter" class="filter search-filter" placeholder="Director Name">
+            </input>
+          </div>
+          <div id="list-holder" class = "offwhite-box">
+            <ul id="selected-movies">
+            </ul>
+          </div>
         </div>
-        <div id="list-holder" class = "offwhite-box">
-          <ul id="selected-movies">
-          </ul>
+        <div id="data-holder" class="offwhite-box">
+            <div id="left-info">
+            </div>
+            <div id="right-info">
+            </div>
+            <div id="none-selected">
+              No movies in the top 250 match your current filters!
+            </div>
+            <div id="loading-gif">
+              <img src ="LoadingStarGreen.gif" alt="Loading">
+            </div>
         </div>
-      </div>
-      <div id="data-holder" class="offwhite-box">
-          <div id="left-info">
+        <div id="title">
+          <h1> IMDB Top 250 Data Visualizer</h1>
+          <div id="explanation" class="offwhite-box">
+            Use the filters on the left to select movies from IMDb's list of the 250 top rated movies of all time, and the statistics below will change based on the movies you have selected!
+            <br>
+            Data was gathered from imdpapi.org using the top 250 as of March 9 2013.
           </div>
-          <div id="right-info">
-          </div>
-          <div id="none-selected">
-            No movies in the top 250 match your current filters!
-          </div>
-          <div id="loading-gif">
-            <img src ="LoadingStarGreen.gif" alt="Loading">
-          </div>
-      </div>
-      <div id="title">
-        <h1> IMDB Top 250 Data Visualizer</h1>
-        <div id="explanation" class="offwhite-box">
-          Use the filters on the left to select movies from IMDb's list of the 250 top rated movies of all time, and the statistics below will change based on the movies you have selected!
-          <br>
-          Data was gathered from imdpapi.org using the top 250 as of March 9 2013.
         </div>
       </div>
     </div>
-
   <script src="jqueryUI/jquery-1.9.1.js"></script>
   <script src="jqueryUI/jquery-ui-1.10.1.custom.min.js"></script>
   <script src="top250.js"></script>

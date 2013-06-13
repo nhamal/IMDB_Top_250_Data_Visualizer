@@ -433,14 +433,12 @@ function drawLine(ctx, x1, y1, x2, y2) {
 
 function formatView(){
     $(document).ready(function(){
-        $("#centered-container").css("margin-left",""+($(window).width()-970)/2 +"px");
         $('#list-holder').height(
             $("#movie-selector").height()-$("#filters").height()-50);
         $('#selected-movies').height(
             $("#movie-selector").height()-$("#filters").height()-50);
     });
     $(window).resize(function(){
-        $("#centered-container").css("margin-left",""+($(window).width()-970)/2 +"px");
         $('#list-holder').height(
             $("#movie-selector").height()-$("#filters").height()-50);
         $('#selected-movies').height(

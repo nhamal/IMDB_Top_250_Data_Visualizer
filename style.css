@@ -85,6 +85,13 @@ h1  {
 }
 
 #centered-container{
+    width: 970px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#absolute-container{
     position: absolute;
     top:0px;
     bottom: 0px;
