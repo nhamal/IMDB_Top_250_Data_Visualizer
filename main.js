@@ -80,11 +80,21 @@ function setupFilters(){
     });
 }
 
+function showLoadingGif(){
+    $("#left-info").hide();
+    $("#right-info").hide();
+    $("#none-selected").hide();
+    $("#loading-gif").show();
+}
+
+
 //called every time a filter changes, and once when the page loads
 // iterates through the top 250 and selects all movies that match 
 // the current filters. Then calls the functions that update the
 // DOM to match the currently selected movies
 function  filterMovies(){
+    showLoadingGif();
+
     var rating   = $('#rating-filter').val();
     var genre    = $('#genre-filter').val();
     var actor    = $('#actor-filter').val();
@@ -277,6 +287,7 @@ function noMoviesSelected(){
     // an element must be hidden for it to be animated
     $("#data-holder").hide();
     //hide data
+    $("#loading-gif").hide();
     $("#left-info").hide();
     $("#right-info").hide();
     //show error
@@ -301,7 +312,7 @@ function refreshInformationView(){
     left.show();
     right.show();
     $("#none-selected").hide();
-
+    $("#loading-gif").hide();
     //generate and add the genre div
     var genresDiv = $("<ul>").addClass("sub-info-box box-right").append("Genres");
     genreTop10.forEach(function(g){
